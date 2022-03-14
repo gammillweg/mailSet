@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chkZipCodes/chkZipCodes.iml" filepath="$PROJECT_DIR$/chkZipCodes/chkZipCodes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chkZipCounts/chkZipCounts.iml" filepath="$PROJECT_DIR$/chkZipCounts/chkZipCounts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/genLabels/genLabels.iml" filepath="$PROJECT_DIR$/genLabels/genLabels.iml" />
+      <module fileurl="file://$PROJECT_DIR$/genPartC/genPartC.iml" filepath="$PROJECT_DIR$/genPartC/genPartC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mailPrep.iml" filepath="$PROJECT_DIR$/mailPrep.iml" />
+    </modules>
+  </component>
+</project>
