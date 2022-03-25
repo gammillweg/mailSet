@@ -21,3 +21,24 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Specific to Intellij IDEA and my IDE projects
+*~
+*.zip
+*.iml
+.idea
+.gitignore
+Bulletin/
+mailPrep/out/
+configPrep/out/
+mailPrep/.idea/
+configPrep/.idea/
+configPrep/genConfigOMX/src/META-INF/
+configPrep/genConfigZones/src/META-INF/
+mailPrep/chkZipCodes/src/META-INF/
+mailPrep/chkZipCounts/src/META-INF/
+mailPrep/genLabels/src/META-INF/
+mailPrep/genPartC/src/META-INF/
+configPrep/src/META-INF/
+
+
