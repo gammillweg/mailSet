@@ -65,6 +65,11 @@ import java.util.Scanner;
 
 /***************************************************************************/
 
+// FIXIT -- I may not handle a quoted comma correctly.
+    //      address "3333 SomeWind Lane, Apt 333" is properly double quoted
+    //      yet the telephone number appears in in plus-4 column.
+    //      Once the comma was removed in the DB, the error was corrected.
+
 // TODO Rename to GenLabels_main... tried Refactor and the results were not acceptable
 public class GenLabels_Main
 {
