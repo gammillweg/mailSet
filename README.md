@@ -1,5 +1,5 @@
 # mailSet
-Presorted US Mail PS3541 Processing via Excel and a set of Java apps.
+### Presorted US Mail PS3541 Processing via Excel and a set of Java apps.
 
 The Denver Area Square Dance Council has been publishing a Square Dance
 Bulletin, a book of some 100-120 pages for 30 to 40 years, pre-sorted
@@ -20,40 +20,42 @@ There are two parts to the processing presented here:
 All the examples, worksheets, zip codes, zones and forms are
 based from 802 Denver CO.
 
-Excel Document (MasterList_LXIV.xlxs (_LXIV Annual Volume))
-WorkSheets:
+### Excel Document
+- MasterList_LXIV.xlxs   (LXIV is the Annual Volume number)
 
-Addrlist:        A data base of subscribers sorted by expiration date.
-ZipCodes:        A list of zip codes.  Current and past zip codes
+#### WorkSheets:
+
+- Addrlist:        A data base of subscribers sorted by expiration date.
+- ZipCodes:        A list of zip codes.  Current and past zip codes
                  Used to count subscribers, due to expire subscribers
                  and complimentary issues.
-ZipCounts:       A number of postal zone tables, a master accumulation
+- ZipCounts:       A number of postal zone tables, a master accumulation
                  table including the PartC table, and a few supporting
                  look-up tables.  As well as monthly issue data collected
                  for an annual report to the USPS.
-BalancePS3541:   USPS Form PS3541 No Bar Code Periodical.  A copy
+- BalancePS3541:   USPS Form PS3541 No Bar Code Periodical.  A copy
                  of the master accumulation table from ZipCounts.
                  Balance is the historical name used for active or
                  current subscribers.
-RenewalPS3541    USPS Form PS3541 No Bar Code Periodical.  A copy
+- RenewalPS3541    USPS Form PS3541 No Bar Code Periodical.  A copy
                  of the master accumulation table from ZipCounts.
                  Renewal is the historical name used for the subscriber
                  list that will expire with the current issue.
                  (Two forms are used.  Explained below.)
-Expired:         Historical record of past subscribers.  Keeping their
+- Expired:         Historical record of past subscribers.  Keeping their
                  names makes it easier to move them back to the active
                  list when they resubscribe.
-Packing List:    A shipping count by Postal Tray
-Audit PS3526     USPS Form PS3526, an annually required review of
+- Packing List:    A shipping count by Postal Tray
+- Audit PS3526     USPS Form PS3526, an annually required review of
                  issues processed. (It is not really an audit.)
 
-Word Templates:  For printing address labels.
+- Word Templates:  For printing address labels.
 
 One must regularly check http://www.usps.com/forms/_pdf/ps3541.pdf
 and update worksheets BalancePS3541 and RenewalsPS3541 to reflect
 USPS price changes and occasional changes to the form.
 
-Two secparate PS3541 are given to the USPS.  We spit the shipment as
+Two separate PS3541 are given to the USPS.  We spit the shipment as
 we insert a renewal notice when a users subscription is about to
 expire.  The additional page adds weight to the issue.  Thus the
 calcualtions are slightly changed.  The USPS allows us to mix the
@@ -73,46 +75,46 @@ Run of the mill collect checks and total for deposit and
 charges to petty cash.
 
 
-Java Applications
-IDE: Intellij IDEA Community Edition 2021.3.2
+### Java Applications
+- IDE: Intellij IDEA Community Edition 2021.3.2
 
-Project: configPrep
-genConfigFile:   There is a required config.xml file.  Code exists to
+#### Project: configPrep
+- genConfigFile:   There is a required config.xml file.  Code exists to
                  automatically generate a default config.xml.  Further,
                  this app will read an existing config.xml and generate
                  java code to generate a default config.xml, thus
                  easing the effort to keep the default current.
-genConfigOMX:    Reformat the USPS Web list to that required by
+- genConfigOMX:    Reformat the USPS Web list to that required by
                  the config file.
                  The USPS web post (as of 2022/March) Quick Service Guide
                  http://pe.usps.gov/text/qsg300/Q207d.htm#1009536
                  Find L201 Periodicals Origin Split First-Class Mail
                  Mixed ADC/AACD, and find your City (802 Denver).
                  Copy and paste to a file the middle column.
-genConfigZones:  Reformats the USPS Web list to that required by
+- genConfigZones:  Reformats the USPS Web list to that required by
                  the config file.
                  The USPS web posts at https://postcalc.usps.com/DomesticZoneChart
                  Enter your "In County" Zip (802 Denver)
                  Copy the table, including the ZIP CODE/ZONE headings,
                  and paste to a file.
-Neither change very often.  Zones more often than OMX.  But each should
+- Neither change very often.  Zones more often than OMX.  But each should
 be updated every two or three months.  The code checks a date in the
 config file and warns you if it has not been updated lately.
 
-Project mailPrep
-chkZipCodes:     Reads the csv files created from worksheets AddressList
+#### Project mailPrep
+- chkZipCodes:     Reads the csv files created from worksheets AddressList
                  and ZipCodes.  It verifies that all current subscriber
                  zip codes are accounted for in worksheet ZipCodes, and
                  generated an error list if any are found missing.
-chkZipCounts:    Reads the csv files created from worksheets AddressList
+- chkZipCounts:    Reads the csv files created from worksheets AddressList
                  and ZipCounts and config.xml and verifies that all
                  worksheet ZipCounts zone tables are correct.  Checks for
                  missing, erroneous or duplicated zip codes in each table.
-genPartC:        There was difficulty filling out PS3541 Part C using
+- genPartC:        There was difficulty filling out PS3541 Part C using
                  Excel.  A software solution was found.  GenPartC computes
                  data to fill out Zip Counts accumulation table, Part C
                  sub table.
-genLabels:       Generates a csv file formatted for MS Word Mail Merge.
+- genLabels:       Generates a csv file formatted for MS Word Mail Merge.
                  and pre-sort assembly envelope labels for use by
                  the assembly crew while pre-sorting and applying address
                  labels to issues.  Also generates a checklist for
@@ -139,7 +141,7 @@ request my services, I will try to help.  I really don't expect
 anybody, not even one person, to read this paper, download the code or
 try to implement the pre sort process.  But, one never knows.
 
-A tad bit of history
+### A tad bit of history
 
 Some 30 years ago Joe N started the Excel address list and came up
 with the idea of filling out the Postal form within Excel.  He passed
