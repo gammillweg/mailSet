@@ -31,14 +31,15 @@ hs_err_pid*
 Bulletin/
 mailPrep/out/
 configPrep/out/
-mailPrep/.idea/
-configPrep/.idea/
-configPrep/genConfigOMX/src/META-INF/
-configPrep/genConfigZones/src/META-INF/
-mailPrep/chkZipCodes/src/META-INF/
-mailPrep/chkZipCounts/src/META-INF/
-mailPrep/genLabels/src/META-INF/
-mailPrep/genPartC/src/META-INF/
-configPrep/src/META-INF/
+# I thought to avoid the IDE files; but... it is to late, they are previously committed.
+# mailPrep/.idea/
+# configPrep/.idea/
+# configPrep/genConfigOMX/src/META-INF/
+# configPrep/genConfigZones/src/META-INF/
+# mailPrep/chkZipCodes/src/META-INF/
+# mailPrep/chkZipCounts/src/META-INF/
+# mailPrep/genLabels/src/META-INF/
+# mailPrep/genPartC/src/META-INF/
+# configPrep/src/META-INF/
 
 
