@@ -13,12 +13,19 @@ The documents here are for a periodical pre-sort, with an issue at least
 100 pages long.  But there are postal forms for fewer pages suitable
 for use by news letters.  Pre-sorting saves considerable postage.
 
-There are two parts to the processing presented here:
+#### About the organization of this repository
+- My local git repository records under the directory structure of Intellij.
+- I like to use package folders to organize my work, and I used Intellij 
+modules under two two projects.  Consequently one has to step around quite
+a lot to find the java code.  I have considered uploading a "flat" set of
+java files, just for convenience sake.
+
+### There are two parts to the processing presented here:
    1) a set of Excel worksheets and
    2) a set of Java apps to support the Excel worksheets.
 
 All the examples, worksheets, zip codes, zones and forms are
-based from 802 Denver CO.
+based from zone 802, Denver CO.
 
 ### Excel Document
 - MasterList_LXIV.xlxs   (LXIV is the Annual Volume number)
@@ -26,6 +33,8 @@ based from 802 Denver CO.
 #### WorkSheets:
 
 - Addrlist:        A data base of subscribers sorted by expiration date.
+                   Obvious fake names and addresses; but the zip codes
+                   are real.
 - ZipCodes:        A list of zip codes.  Current and past zip codes
                  Used to count subscribers, due to expire subscribers
                  and complimentary issues.
@@ -42,9 +51,9 @@ based from 802 Denver CO.
                  Renewal is the historical name used for the subscriber
                  list that will expire with the current issue.
                  (Two forms are used.  Explained below.)
-- Expired:         Historical record of past subscribers.  Keeping their
+- Expired:         Historical record of past subscribers.  Keeping subsriber
                  names makes it easier to move them back to the active
-                 list when they resubscribe.
+                 list when they resubscribe.  Here, this worksheet is empty.
 - Packing List:    A shipping count by Postal Tray
 - Audit PS3526     USPS Form PS3526, an annually required review of
                  issues processed. (It is not really an audit.)
@@ -120,7 +129,11 @@ config file and warns you if it has not been updated lately.
                  labels to issues.  Also generates a checklist for
                  quality control during the pre-sort (we call it "Assembly").
                  And a cutting guide to help cut up the label sheets for
-                 separating into "label envelopes."
+                 separating into "label envelopes."  (I forgot the need
+                 for a packing list.  genLabels will need to be expanded
+                 to generate a packing list.)
+- All these apps are small and focused; except for genLabels, which catches
+  all the assembly needs.   
 
 None of the above Java code is special.  It is all common run of the
 mill code, just chugging along to do it's job.
