@@ -11,14 +11,16 @@ than doing it yourself.  The Denver Square Dance Bulletin has been
 volunteer published and pre-sorted for a long time.  It can be done.
 The documents here are for a periodical pre-sort, with an issue at least
 100 pages long.  But there are postal forms for fewer pages suitable
-for use by news letters.  Pre-sorting saves considerable postage.
+for use by newsletters.  Pre-sorting saves considerable postage.
 
 #### About the organization of this repository
 - My local git repository records under the directory structure of Intellij.
 - I like to use package folders to organize my work, and I used Intellij 
-modules under two two projects.  Consequently one has to step around quite
+modules under two projects.  Consequently, one has to step around quite
 a lot to find the java code.  I have considered uploading a "flat" set of
-java files, just for convenience sake.
+java files, just for convenience’s sake.
+- If you clone mailSet and open with Intellij IDEA, it loads and builds.
+I use IntelliJ IDEA (Community Edition) (current build: 2021.3.2)
 
 ### There are two parts to the processing presented here:
    1) a set of Excel worksheets and
@@ -80,7 +82,7 @@ the latest data.  Print and submit with your presorted mail.  Labels
 for each issue is a bonus.  The real work is the postal forms.
 
 There is also an Accounting.xlsx; but it is nothing special.
-Run of the mill collect checks and total for deposit and
+Run-of-the-mill collect checks and total for deposit and
 charges to petty cash.
 
 
@@ -146,7 +148,7 @@ Exel and Java would be helpful, if not required.
 I have tried to avoid the word "I".  But this is all from one person,
 Bill G.  I wrote all the code.  I did not do the original Excel work, I
 built on the work of two predecessors.  But much of the Excel work is
-on me.  I am approaching 80 years old and I want to pass my work on.  I
+on me.  I am approaching 80 years old, and I want to pass my work on.  I
 am not willing to devote a lot of time helping some club or business
 set themselves up.  I am not trying to go into business.  But I have
 provided an email address and, assuming there will not be many who
@@ -197,7 +199,7 @@ our Bulletin before I am able to bring mailSet into productive use.
 
 The Window Forms program, BulletinSlicer is not provided on this
 GitHup site.  I don't really want to give it away; but there is
-nothing prioritory about it.  If you would perfer an old. well tested,
+nothing priority about it.  If you prefer an old. well tested,
 VC C# Forms program to the provided Java code, let me know, and I'll
-think about it.  (Again, I don't expect any one to ever read this, let
+think about it.  (Again, I don't expect anyone to ever read this, let
 alone ask for BulletinSlicer.)
