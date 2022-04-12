@@ -2,9 +2,15 @@
 # Temporary chrippling of mailSet (220412)
 - I have deleted modules configPrep and mailPrep (all java code)
 - I got ahead of myself.  I need to do a lot more work on my local system
-  before I release my code to the world.  (Hopefully before the end of
-  summer.  If it's not back by Dec 2022, then it probably will never
-  be posted.)
+  before I release my code to the world. (Hopefully before the end of
+  summer.)
+- If mailSet is not back by Dec 2022, then it probably will never
+  be posted.
+- (OK, I understand, the code is not really deleted.  GitHub has it.
+  I could delete the repository; but choose not to.  But, understand,
+  if you pull the code committed prior to my chrippling.  It is not
+  all that useful.  Just wait.  Hopefull I'll finish my work. and
+  push good stuff up.)
   
 ### Presorted US Mail PS3541 Processing via Excel and a set of Java apps.
 
