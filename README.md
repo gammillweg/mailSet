@@ -1,4 +1,11 @@
 # mailSet
+# Temporary chrippling of mailSet (220412)
+- I have deleted modules configPrep and mailPrep (all java code)
+- I got ahead of myself.  I need to do a lot more work on my local system
+  before I release my code to the world.  (Hopefully before the end of
+  summer.  If it's not back by Dec 2022, then it probably will never
+  be posted.)
+  
 ### Presorted US Mail PS3541 Processing via Excel and a set of Java apps.
 
 The Denver Area Square Dance Council has been publishing a Square Dance
